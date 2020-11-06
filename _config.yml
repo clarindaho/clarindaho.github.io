@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+title: Clarinda Ho
+description: About Me
+
+logo: images/headshot.jpg
+show_downloads: false
