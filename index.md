@@ -1,3 +1,3 @@
 ## Clarinda Ho
 
-I am an incoming student at Carnegie Mellon University Silicon Valley, pursuing a Master's degree in Software Engineering.
+I am a MS student in Software Engineering at Carnegie Mellon University.

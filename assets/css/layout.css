@@ -1,0 +1,131 @@
+:root {
+    --monza: #cc002b;
+    --nobel: #b3b3b3;
+    --tundora: #4d4d4d; 
+
+    --maps: #dd4b3e;
+    --twitter: #1da1f2;
+    --linkedin: #2867b2;
+    --github: #6e5494;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: black;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--nobel);
+
+    padding: 0.875rem 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    background-color: var(--nobel);
+    color: black;
+}
+
+.navbar a.active {
+    background-color: var(--monza);
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin: 1rem;
+}
+
+#profile {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#profile #headshot {
+    align-self: center;
+
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+#profile h1 {
+    align-self: center;
+
+    margin: 0.1rem 0;
+
+    font-size: 1.5rem;
+}
+
+#profile p {
+    align-self: center;
+
+    text-align: center;
+    font-size: 1rem;
+}
+
+#profile table .icon { vertical-align: middle; text-align: center; }
+
+/* Logos */
+#profile #location { color: var(--maps); }
+#social-media #twitter { background-color: var(--twitter); color: white; }
+#social-media #linkedin { background-color: var(--linkedin); color: white; }
+#social-media #github { background-color: var(--github); color: white; }
+#social-media .fa-border { padding: .2rem .25rem .15rem; border: 0; }
+
+section { flex: 3; padding: 0.1rem 1rem; }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+
+    background-color: black;
+    color: var(--nobel);
+}
+
+.footer-content {
+    padding: 0.1rem 1rem; 
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#social-media .fa { margin-left: 0.5rem; vertical-align: middle; }

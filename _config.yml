@@ -1,7 +1,53 @@
-theme: jekyll-theme-minimal
+# Site settings
+lang: en-US
+
+author:
+    name: Clarinda Ho
+    twitter: clarinda_ho
+    github: clarindaho
+    linkedin: linkedin.com/in/clarindaho
+    picture: ./assets/images/headshot.jpg
 
 title: Clarinda Ho
-description: About Me
+description: >-
+    MS candidate in Software Engineering at CMU
+baseurl: /
+url: https://clarindaho.github.io
 
-logo: images/headshot.jpg
-show_downloads: false
+search: false
+search_full_content: false
+
+navbar-links:
+    About Me: "about"
+    Experiences: "experiences"
+
+# Build settings
+theme: jekyll-theme-minimal
+
+# Where things are
+sass:
+    sass_dir: ./assets/css
+
+# Exclude from processing
+exclude:
+    - .asset-cache
+    - .bundle
+    - .codeclimate.yml
+    - .editorconfig
+    - .gitattributes
+    - .jekyll-assets-cache
+    - .sass-cache
+    - .scss-lint.yml
+    - CHANGELOG
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - node_modules
+    - Rakefile
+    - README
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/
+    - /docs # ignore Basically Basic sample site
+    - /example # ignore Basically Basic dev site
