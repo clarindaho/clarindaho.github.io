@@ -3,14 +3,14 @@ lang: en-US
 
 author:
     name: Clarinda Ho
+    position: MS Candidate in Software Engineering at CMU
     twitter: clarinda_ho
     github: clarindaho
     linkedin: linkedin.com/in/clarindaho
     picture: ./assets/images/headshot.jpg
 
 title: Clarinda Ho
-description: >-
-    MS candidate in Software Engineering at CMU
+description: My Personal Website
 baseurl: /
 url: https://clarindaho.github.io
 

@@ -1,7 +1,6 @@
 :root {
-    --monza: #cc002b;
-    --nobel: #b3b3b3;
-    --tundora: #4d4d4d; 
+    --nav-active: steelblue;
+    --layout-text: lightsteelblue;
 
     --maps: #dd4b3e;
     --twitter: #1da1f2;
@@ -26,7 +25,7 @@ body {
 }
 
 .navbar a {
-    color: var(--nobel);
+    color: var(--layout-text);
 
     padding: 0.875rem 1rem;
     
@@ -40,21 +39,21 @@ body {
 }
 
 .navbar a:hover {
-    background-color: var(--nobel);
+    background-color: var(--layout-text);
     color: black;
 }
 
 .navbar a.active {
-    background-color: var(--monza);
+    background-color: var(--nav-active);
     color: white;
 }
 
-.content {
+.wrapper {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 
-    margin: 1rem;
+    margin: 3rem 2rem;
 }
 
 #profile {
@@ -89,29 +88,39 @@ body {
 #profile p {
     align-self: center;
 
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.25rem 0 1rem 0;
 
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
 }
 
 #profile table { 
     margin-left: auto;
     margin-right: auto;
 
-    font-size: 0.8rem; 
+    font-size: 0.75rem; 
 }
 
 #profile table .icon { vertical-align: middle; text-align: center; }
 
 /* Logos */
+.fa-1\.5x { font-size: 1.5rem; }
 #profile #location { color: var(--maps); }
 #social-media #twitter { background-color: var(--twitter); color: white; }
 #social-media #linkedin { background-color: var(--linkedin); color: white; }
 #social-media #github { background-color: var(--github); color: white; }
 #social-media .fa-border { padding: .2rem .25rem .15rem; border: 0; }
 
-section { flex-grow: 1; padding: 0.1rem 1rem; }
+.content { 
+    flex-grow: 1; 
+
+    padding: 0 1rem; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 footer {
     position: fixed;
@@ -121,7 +130,7 @@ footer {
     width: 100%;
 
     background-color: black;
-    color: var(--nobel);
+    color: var(--layout-text);
 }
 
 .footer-content {

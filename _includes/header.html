@@ -19,26 +19,26 @@
 <body>
     <header>
         <nav class="navbar">
-            <a href="{{ "/" | absolute_url }}"><i class="fa fa-home fa-2x"></i></a>
+            <a id="home" href="{{ "/" | absolute_url }}"><i class="fa fa-home fa-2x"></i></a>
             <div style="flex-grow: 1;"></div>
-            <a href="/experiences">Experiences</a>
-            <a href="/blog">Blog</a>
+            <a id="experiences" href="/experiences">Experiences</a>
+            <a id="blog" href="/blog">Blog</a>
         </nav>
     </header>
 
-    <div class="content">
+    <div class="wrapper">
         <div id="profile">
             <img id="headshot" src="{{site.author.picture | relative_url}}" alt="Headshot" />
-            <h1>{{ site.title }}</h1>
-            <p>{{ site.description }}</p>
+            <h1>{{ site.author.name }}</h1>
+            <p>{{ site.author.position }}</p>
             <table>
                 <tbody>
                     <tr>
-                        <td class="icon"><i id="location" class="fa fa-map-marker fa-2x"></i></td>
+                        <td class="icon"><i id="location" class="fa fa-map-marker fa-1.5x"></i></td>
                         <td>San Francisco Bay Area</td>
                     </tr>
                     <tr>
-                        <td class="icon"><i id="education" class="fa fa-university fa-2x"></i></td>
+                        <td class="icon"><i id="education" class="fa fa-university fa-1.5x"></i></td>
                         <td>Carnegie Mellon University</td>
                     </tr>
                 </tbody>
