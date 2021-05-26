@@ -1,0 +1,127 @@
+---
+permalink: /experiences
+layout: default
+
+title: Clarinda Ho | Experiences
+description: CV
+---
+
+<style type="text/css" media="screen">
+    section {
+        margin: 0 0 0.625rem; 
+    
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    section h2 {
+        margin: 0 0 1rem;
+        padding: 0.25rem 0;
+
+        border-bottom: solid 0.1rem steelblue;
+
+        color: steelblue;
+
+        font-size: 1.5rem;
+        letter-spacing: -0.05rem;
+        line-height: 1;
+    }
+
+    section div div {
+        margin: 0 0 0.25rem 0;
+
+        line-height: 1.25;
+
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    section .border-bottom { border-bottom: solid 0.1rem black; }
+
+    section div ul {
+        margin: 0;
+        padding: 0 0 0 2rem;
+    }
+</style>
+
+<script>
+    $(document).ready(() => {
+        // Update navigation bar
+        $('.navbar #experiences').addClass('active');
+
+        $('.navbar #experiences').click((event) => {
+            event.preventDefault();
+        });
+    });
+</script>
+
+<section>
+    <h2>Education</h2>
+
+    <div id="masters">
+        <div>
+            <span class="border-bottom">
+                <span style="font-weight: bold;">Carnegie Mellon University</span>,
+                <span style="font-style: italic;">Moffett Field, CA</span>
+            </span>
+            <span class="border-bottom" style="flex-grow: 1;"></span>
+            <span class="border-bottom" style="text-align: right;">February 2021 - Present</span>
+        </div>
+
+        <div>
+            <span>
+                <span style="font-weight: bold;">Master of Science</span>,
+                <span>Software Engineering</span>
+            </span>
+            <span style="flex-grow: 1;"></span>
+            <span style="text-align: right;">Expected Graduation: May 2022</span>
+        </div>
+
+        <div>
+            <ul>
+                <li>Programming Coursework: Cloud Computing (AWS, Azure and GCP), Deep Learning (Python), 
+                    Software Engineering (HTML, CSS, JS)</li>
+                <li>Activities: ECE Graduate Organization, Women in ECE</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="bachelors">
+        <div>
+            <span class="border-bottom">
+                <span style="font-weight: bold;">Case Western Reserve University</span>,
+                <span style="font-style: italic;">Cleveland, OH</span>
+            </span>
+            <span class="border-bottom" style="flex-grow: 1;"></span>
+            <span class="border-bottom" style="text-align: right;">August 2016 - December 2020</span>
+        </div>
+
+        <div>
+            <span>
+                <span style="font-weight: bold;">Bachelor of Science</span>,
+                <span>Computer Science</span>
+            </span>
+            <span style="flex-grow: 1;"></span>
+            <span>
+                <span style="font-weight: bold;">Minor</span>,
+                <span>Chinese</span>
+            </span>
+            <span style="flex-grow: 1;"></span>
+            <span style="text-align: right;">GPA: 3.47/4.00</span>
+        </div>
+
+        <div>
+            <ul>
+                <li>Programming Coursework: Data Structures, Algorithms, Artificial Intelligence, Machine 
+                    Learning (Python), Causal Learning from Data, Databases (MySQL), Operating Systems and 
+                    Concurrent Programming (C), Computer Networks
+                </li>
+                <li>Language Coursework: Advanced Chinese, Contemporary Chinese Texts</li>
+            </ul>
+        </div>
+    </div>
+</section>

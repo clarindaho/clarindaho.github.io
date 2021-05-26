@@ -21,7 +21,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
 }
 
 .navbar a {
@@ -62,7 +61,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
 }
 
 #profile #headshot {
@@ -110,7 +108,7 @@ body {
 #social-media #twitter { background-color: var(--twitter); color: white; }
 #social-media #linkedin { background-color: var(--linkedin); color: white; }
 #social-media #github { background-color: var(--github); color: white; }
-#social-media .fa-border { padding: .2rem .25rem .15rem; border: 0; }
+#social-media .fa-border { border: 0; }
 
 .content { 
     flex-grow: 1; 
@@ -139,7 +137,6 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
 }
 
 #social-media {
