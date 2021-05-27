@@ -9,8 +9,17 @@
 }
 
 body {
+    position: fixed;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
     font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .navbar {
@@ -48,15 +57,19 @@ body {
 }
 
 .wrapper {
+    flex-grow: 1;
+
+    overflow: hidden;
+
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
-    margin: 3rem 2rem;
 }
 
 #profile {
     flex: 0 0 12rem;
+
+    margin: 1rem 2rem;
 
     display: flex;
     flex-direction: column;
@@ -76,7 +89,7 @@ body {
 #profile h1 {
     align-self: center;
 
-    margin: 1rem 0 0;
+    margin: 0.5rem 0 0;
 
     font-size: 1.5rem;
     letter-spacing: -0.05rem;
@@ -86,7 +99,7 @@ body {
 #profile p {
     align-self: center;
 
-    margin: 0.25rem 0 1rem 0;
+    margin: 0.25rem 0 1.25rem 0;
 
     text-align: center;
     font-size: 0.8rem;
@@ -111,9 +124,11 @@ body {
 #social-media .fa-border { border: 0; }
 
 .content { 
-    flex-grow: 1; 
-
-    padding: 0 1rem; 
+    flex-grow: 1;
+    
+    padding: 1rem 2rem 1rem 0;
+    height: 96.25%;
+    overflow-y: auto;
 
     display: flex;
     flex-direction: column;
@@ -121,12 +136,6 @@ body {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-
     background-color: black;
     color: var(--layout-text);
 }
