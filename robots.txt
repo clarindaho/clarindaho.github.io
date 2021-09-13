@@ -4,3 +4,6 @@ permalink: /robots.txt
 
 User-agent: *
 Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
